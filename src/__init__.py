@@ -1,1 +1,1 @@
-"""Petit framework de génération de scénarios Gherkin avec un LLM local (Ollama)."""
+"""framework de génération de scénarios Gherkin avec un LLM local (Ollama)."""
