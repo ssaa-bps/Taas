@@ -21,9 +21,7 @@ logs/
 output/
 reports/
 
-# Scenarios, specifications, and logs
-scenarios/
-specs/
+#logs
 log/
 
 # Temporary files
