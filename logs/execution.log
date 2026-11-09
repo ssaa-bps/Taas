@@ -4463,3 +4463,239 @@
 2026-11-09 08:05:09 | INFO | Results table updated: executions.xlsx
 2026-11-09 08:05:09 | INFO | //// qwen3-coder:30b | exigences | INTERRUPTED ////
 2026-11-09 08:05:09 | WARNING | Execution interrupted by user (Ctrl+C)
+2026-11-09 09:55:31 | ERROR | Generation failed for spx.xlsx: [Errno 2] No such file or directory: 'specs\\client\\spx.xlsx'
+2026-11-09 09:58:21 | INFO | Starting Gherkin generation
+2026-11-09 09:58:21 | INFO | Spec file: fournisseurs.yaml (SPEC-FRN-001)
+2026-11-09 09:58:21 | INFO | Starting step 'exigences' - spec: fournisseurs
+2026-11-09 10:00:33 | INFO | Starting Gherkin generation
+2026-11-09 10:00:33 | INFO | Spec file: fournisseurs.yaml (SPEC-FRN-001)
+2026-11-09 10:00:33 | INFO | Starting step 'exigences' - spec: fournisseurs
+2026-11-09 10:00:53 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:00:53 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:00:53 | INFO | Live usage (19 samples) - Ollama CPU: avg 45.3% / peak 50.0% (of the whole machine)
+2026-11-09 10:00:53 | INFO | Live usage - Ollama RAM: avg 14.8 GB / peak 15.1 GB
+2026-11-09 10:00:53 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:00:53 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:00:53 | INFO | Input tokens: 1699
+2026-11-09 10:00:53 | INFO | Output tokens: 177
+2026-11-09 10:00:53 | INFO | Total tokens: 1876
+2026-11-09 10:00:53 | INFO | Prompt processing time: 0.107 seconds
+2026-11-09 10:00:53 | INFO | Generation time: 19.963 seconds
+2026-11-09 10:00:53 | INFO | Total execution time: 20.352 seconds
+2026-11-09 10:00:56 | INFO | Hardware - CPU: 13th Gen Intel(R) Core(TM) i7-13620H
+2026-11-09 10:00:56 | INFO | Hardware - CPU cores: 10 physical / 16 logical
+2026-11-09 10:00:56 | INFO | Hardware - RAM total: 23.63 GB
+2026-11-09 10:00:56 | INFO | Hardware - GPU: none detected (nvidia-smi not found)
+2026-11-09 10:00:56 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:00:56 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:00:56 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:00:56 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:00:56 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:00:56 | INFO | Exigences found: 3 (exigences.json)
+2026-11-09 10:00:56 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:00:56 | INFO | //// qwen3-coder:30b | exigences | OK ////
+2026-11-09 10:00:56 | INFO | Dictionary sent to the LLM: 27 of 27 step(s)
+2026-11-09 10:00:56 | INFO | Starting step 'dictionary' - spec: fournisseurs
+2026-11-09 10:01:30 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:01:30 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:01:30 | INFO | Live usage (33 samples) - Ollama CPU: avg 47.2% / peak 50.5% (of the whole machine)
+2026-11-09 10:01:30 | INFO | Live usage - Ollama RAM: avg 15.3 GB / peak 15.8 GB
+2026-11-09 10:01:30 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:01:30 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:01:30 | INFO | Input tokens: 1479
+2026-11-09 10:01:30 | INFO | Output tokens: 86
+2026-11-09 10:01:30 | INFO | Total tokens: 1565
+2026-11-09 10:01:30 | INFO | Prompt processing time: 24.138 seconds
+2026-11-09 10:01:30 | INFO | Generation time: 9.701 seconds
+2026-11-09 10:01:30 | INFO | Total execution time: 34.069 seconds
+2026-11-09 10:01:30 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:01:30 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:01:30 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:01:30 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:01:30 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:01:30 | INFO | Dictionary: 27 existing step(s), 1 new step(s) added to steps.yaml
+2026-11-09 10:01:30 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:01:30 | INFO | //// qwen3-coder:30b | dictionary | OK ////
+2026-11-09 10:01:30 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-001
+2026-11-09 10:03:04 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:03:04 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:03:04 | INFO | Live usage (89 samples) - Ollama CPU: avg 49.2% / peak 51.5% (of the whole machine)
+2026-11-09 10:03:04 | INFO | Live usage - Ollama RAM: avg 15.9 GB / peak 16.5 GB
+2026-11-09 10:03:04 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:03:04 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:03:04 | INFO | Input tokens: 2353
+2026-11-09 10:03:04 | INFO | Output tokens: 416
+2026-11-09 10:03:04 | INFO | Total tokens: 2769
+2026-11-09 10:03:04 | INFO | Prompt processing time: 40.692 seconds
+2026-11-09 10:03:04 | INFO | Generation time: 53.644 seconds
+2026-11-09 10:03:04 | INFO | Total execution time: 94.589 seconds
+2026-11-09 10:03:04 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:03:04 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:03:04 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:03:04 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:03:04 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:03:04 | INFO | Scenarios generated: 1
+2026-11-09 10:03:04 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-001.feature
+2026-11-09 10:03:04 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:03:04 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:03:04 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-002
+2026-11-09 10:03:48 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:03:48 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:03:48 | INFO | Live usage (41 samples) - Ollama CPU: avg 49.4% / peak 50.2% (of the whole machine)
+2026-11-09 10:03:48 | INFO | Live usage - Ollama RAM: avg 15.5 GB / peak 16.4 GB
+2026-11-09 10:03:48 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:03:48 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:03:48 | INFO | Input tokens: 2324
+2026-11-09 10:03:48 | INFO | Output tokens: 324
+2026-11-09 10:03:48 | INFO | Total tokens: 2648
+2026-11-09 10:03:48 | INFO | Prompt processing time: 2.005 seconds
+2026-11-09 10:03:48 | INFO | Generation time: 41.759 seconds
+2026-11-09 10:03:48 | INFO | Total execution time: 43.951 seconds
+2026-11-09 10:03:48 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:03:48 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:03:48 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:03:48 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:03:48 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:03:48 | INFO | Scenarios generated: 2
+2026-11-09 10:03:48 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-002.feature
+2026-11-09 10:03:48 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:03:48 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:03:48 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-003
+2026-11-09 10:04:22 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:04:22 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:04:22 | INFO | Live usage (32 samples) - Ollama CPU: avg 49.7% / peak 50.6% (of the whole machine)
+2026-11-09 10:04:22 | INFO | Live usage - Ollama RAM: avg 15.5 GB / peak 15.6 GB
+2026-11-09 10:04:22 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:04:22 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:04:22 | INFO | Input tokens: 2328
+2026-11-09 10:04:22 | INFO | Output tokens: 256
+2026-11-09 10:04:22 | INFO | Total tokens: 2584
+2026-11-09 10:04:22 | INFO | Prompt processing time: 1.945 seconds
+2026-11-09 10:04:22 | INFO | Generation time: 31.725 seconds
+2026-11-09 10:04:22 | INFO | Total execution time: 33.797 seconds
+2026-11-09 10:04:22 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:04:22 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:04:22 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:04:22 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:04:22 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:04:22 | INFO | Scenarios generated: 1
+2026-11-09 10:04:22 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-003.feature
+2026-11-09 10:04:22 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:04:22 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:04:22 | INFO | Gherkin generation completed successfully
+2026-11-09 10:20:18 | INFO | Starting Gherkin generation
+2026-11-09 10:20:18 | INFO | Spec file: fournisseurs.yaml (SPEC-FRN-001)
+2026-11-09 10:20:18 | INFO | Starting step 'exigences' - spec: fournisseurs
+2026-11-09 10:20:38 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:20:38 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:20:38 | INFO | Live usage (19 samples) - Ollama CPU: avg 44.3% / peak 50.7% (of the whole machine)
+2026-11-09 10:20:38 | INFO | Live usage - Ollama RAM: avg 14.6 GB / peak 14.8 GB
+2026-11-09 10:20:38 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:20:38 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:20:38 | INFO | Input tokens: 1699
+2026-11-09 10:20:38 | INFO | Output tokens: 176
+2026-11-09 10:20:38 | INFO | Total tokens: 1875
+2026-11-09 10:20:38 | INFO | Prompt processing time: 0.114 seconds
+2026-11-09 10:20:38 | INFO | Generation time: 19.479 seconds
+2026-11-09 10:20:38 | INFO | Total execution time: 20.476 seconds
+2026-11-09 10:20:40 | INFO | Hardware - CPU: 13th Gen Intel(R) Core(TM) i7-13620H
+2026-11-09 10:20:40 | INFO | Hardware - CPU cores: 10 physical / 16 logical
+2026-11-09 10:20:40 | INFO | Hardware - RAM total: 23.63 GB
+2026-11-09 10:20:40 | INFO | Hardware - GPU: none detected (nvidia-smi not found)
+2026-11-09 10:20:40 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:20:40 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:20:40 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:20:40 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:20:40 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:20:40 | INFO | Exigences found: 3 (exigences.json)
+2026-11-09 10:20:40 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:20:40 | INFO | //// qwen3-coder:30b | exigences | OK ////
+2026-11-09 10:20:40 | INFO | Dictionary sent to the LLM: 28 of 28 step(s)
+2026-11-09 10:20:40 | INFO | Starting step 'dictionary' - spec: fournisseurs
+2026-11-09 10:21:07 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:21:07 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:21:07 | INFO | Live usage (25 samples) - Ollama CPU: avg 41.4% / peak 49.2% (of the whole machine)
+2026-11-09 10:21:07 | INFO | Live usage - Ollama RAM: avg 13.0 GB / peak 14.7 GB
+2026-11-09 10:21:07 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:21:07 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:21:07 | INFO | Input tokens: 1491
+2026-11-09 10:21:07 | INFO | Output tokens: 107
+2026-11-09 10:21:07 | INFO | Total tokens: 1598
+2026-11-09 10:21:07 | INFO | Prompt processing time: 11.881 seconds
+2026-11-09 10:21:07 | INFO | Generation time: 13.601 seconds
+2026-11-09 10:21:07 | INFO | Total execution time: 27.010 seconds
+2026-11-09 10:21:07 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:21:07 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:21:07 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:21:07 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:21:07 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:21:07 | INFO | Dictionary: 28 existing step(s), 0 new step(s) added to steps.yaml
+2026-11-09 10:21:07 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:21:07 | INFO | //// qwen3-coder:30b | dictionary | OK ////
+2026-11-09 10:21:07 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-001
+2026-11-09 10:22:05 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:22:05 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:22:05 | INFO | Live usage (54 samples) - Ollama CPU: avg 47.8% / peak 50.3% (of the whole machine)
+2026-11-09 10:22:05 | INFO | Live usage - Ollama RAM: avg 15.0 GB / peak 15.5 GB
+2026-11-09 10:22:05 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:22:05 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:22:05 | INFO | Input tokens: 2353
+2026-11-09 10:22:05 | INFO | Output tokens: 415
+2026-11-09 10:22:05 | INFO | Total tokens: 2768
+2026-11-09 10:22:05 | INFO | Prompt processing time: 1.730 seconds
+2026-11-09 10:22:05 | INFO | Generation time: 55.551 seconds
+2026-11-09 10:22:05 | INFO | Total execution time: 57.826 seconds
+2026-11-09 10:22:05 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:22:05 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:22:05 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:22:05 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:22:05 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:22:05 | INFO | Scenarios generated: 1
+2026-11-09 10:22:05 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-001.feature
+2026-11-09 10:22:05 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:22:05 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:22:05 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-002
+2026-11-09 10:22:28 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:22:28 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:22:28 | INFO | Live usage (21 samples) - Ollama CPU: avg 48.8% / peak 50.5% (of the whole machine)
+2026-11-09 10:22:28 | INFO | Live usage - Ollama RAM: avg 15.6 GB / peak 15.6 GB
+2026-11-09 10:22:28 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:22:28 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:22:28 | INFO | Input tokens: 2324
+2026-11-09 10:22:28 | INFO | Output tokens: 170
+2026-11-09 10:22:28 | INFO | Total tokens: 2494
+2026-11-09 10:22:28 | INFO | Prompt processing time: 1.624 seconds
+2026-11-09 10:22:28 | INFO | Generation time: 20.560 seconds
+2026-11-09 10:22:28 | INFO | Total execution time: 22.315 seconds
+2026-11-09 10:22:28 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:22:28 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:22:28 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:22:28 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:22:28 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:22:28 | INFO | Scenarios generated: 1
+2026-11-09 10:22:28 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-002.feature
+2026-11-09 10:22:28 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:22:28 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:22:28 | INFO | Starting step 'gherkin' - spec: fournisseurs - exigence: SPEC-SUP-003
+2026-11-09 10:23:50 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-09 10:23:50 | INFO | Live usage - monitored processes: conhost.exe(2944), ollama app.exe(10724), llama-server.exe(27184), ollama.exe(30452), conhost.exe(30924)
+2026-11-09 10:23:50 | INFO | Live usage (78 samples) - Ollama CPU: avg 49.4% / peak 58.0% (of the whole machine)
+2026-11-09 10:23:50 | INFO | Live usage - Ollama RAM: avg 15.7 GB / peak 15.9 GB
+2026-11-09 10:23:50 | INFO | Live usage - GPU: no NVIDIA GPU detected (nvidia-smi not found), GPU values not available
+2026-11-09 10:23:50 | INFO | Model: qwen3-coder:30b
+2026-11-09 10:23:50 | INFO | Input tokens: 2327
+2026-11-09 10:23:50 | INFO | Output tokens: 619
+2026-11-09 10:23:50 | INFO | Total tokens: 2946
+2026-11-09 10:23:50 | INFO | Prompt processing time: 1.827 seconds
+2026-11-09 10:23:50 | INFO | Generation time: 80.953 seconds
+2026-11-09 10:23:50 | INFO | Total execution time: 82.912 seconds
+2026-11-09 10:23:50 | INFO | HTTP Request: GET http://127.0.0.1:11434/api/ps "HTTP/1.1 200 OK"
+2026-11-09 10:23:50 | INFO | LLM memory usage - total: 18.21 GB
+2026-11-09 10:23:50 | INFO | LLM memory usage - VRAM (GPU): 0.0 GB
+2026-11-09 10:23:50 | INFO | LLM memory usage - RAM (CPU): 18.21 GB
+2026-11-09 10:23:50 | INFO | LLM processor placement: 0% GPU / 100% CPU
+2026-11-09 10:23:50 | INFO | Scenarios generated: 4
+2026-11-09 10:23:50 | INFO | Output file: fournisseurs_qwen3-coder-30b\SPEC-SUP-003.feature
+2026-11-09 10:23:50 | INFO | Results table updated: executions.xlsx
+2026-11-09 10:23:50 | INFO | //// qwen3-coder:30b | gherkin | OK ////
+2026-11-09 10:23:50 | INFO | Gherkin generation completed successfully

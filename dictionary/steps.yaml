@@ -26,3 +26,4 @@ steps:
 - je tente de soumettre une demande de référencement fournisseur pour validation
 - je saisis {valeur} dans le champ {champ}
 - je sélectionne {valeur} dans la liste {liste}
+- le statut de "{objet}" est "{statut}"
