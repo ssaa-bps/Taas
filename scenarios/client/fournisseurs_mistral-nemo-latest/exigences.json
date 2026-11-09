@@ -1,0 +1,88 @@
+{
+  "exigences": [
+    {
+      "exigenceCode": "SPEC-FRN-001",
+      "libelle": "En tant qu'utilisateur habilité, je peux créer une demande de référencement fournisseur contenant la raison sociale, le pays, l'adresse, l'identifiant fiscal, le nom du contact principal, son adresse e-mail et la catégorie du fournisseur.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "frn"
+    },
+    {
+      "exigenceCode": "SPEC-FRN-002",
+      "libelle": "En tant qu'utilisateur habilité, je peux enregistrer une demande de référencement en brouillon et la compléter ultérieurement.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "frn"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-001",
+      "libelle": "Le système doit rejeter les factures dont les champs obligatoires sont manquants ou dont le montant total est invalide.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-002",
+      "libelle": "Avant l'importation, le système doit vérifier si une facture portant le même identifiant fournisseur et le même numéro de facture existe déjà.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-003",
+      "libelle": "Les factures en doublon doivent être rejetées et un message d'erreur doit être affiché.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-004",
+      "libelle": "Une facture valide et non dupliquée doit être importée avec le statut « Pending Validation ».",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-005",
+      "libelle": "Les utilisateurs doivent pouvoir consulter une facture importée et ses détails.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-001",
+      "libelle": "Un employé peut créer une demande d'achat contenant une description, une quantité, un prix unitaire, un fournisseur et une date de livraison.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-002",
+      "libelle": "La quantité et le prix unitaire doivent être strictement supérieurs à zéro.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-003",
+      "libelle": "Le système doit calculer le montant total en multipliant la quantité par le prix unitaire.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-004",
+      "libelle": "Un approbateur habilité peut approuver ou rejeter la demande.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach"
+    },
+    {
+      "exigenceCode": "SPEC-CMD-001",
+      "libelle": "Une demande d'achat approuvée peut être convertie en commande d'achat.",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "cmd"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+steps:
+- je crée "{objet}"
+- je saisis "{valeur}" dans le champ "{champ}"
+- je sélectionne "{valeur}" dans la liste "{liste}"
+- je sauvegarde "{objet}" en brouillon
+- '"{objet}" est enregistré en brouillon'
+- je tente de soumettre "{objet}" pour validation
+- un message d'erreur indique "{message}"
+- le champ "{champ}" est indiqué comme obligatoire
+- 'l''état de "{objet}" est "{état}"'
+- je crée une demande de référencement fournisseur
+- je sauvegarde ma demande de référencement fournisseur en brouillon
+- je importe une facture avec l'identifiant fournisseur "{identifiant_fournisseur}", le numéro "{numero_facture}", la date "{date_facture}" et le montant "{montant_total}"
+- le système rejette l'importation de la facture car les champs obligatoires sont manquants ou le montant total est invalide
+- le système vérifie l'existence d'une facture avec l'identifiant fournisseur "{identifiant_fournisseur}" et le numéro "{numero_facture}" avant l'importation
+- le système rejette la facture en cas de doublon avec affichage d'un message d'erreur
+- la facture est importée avec le statut "Pending Validation" car elle est valide et non dupliquée
+- je consulte les détails de la facture importée "{identifiant_facture}"
+- ma demande de référencement fournisseur est enregistrée en brouillon
+- je sauvegarde {objet} en brouillon
+- je crée une nouvelle demande de référencement fournisseur contenant la raison sociale, le pays, l'adresse, l'identifiant fiscal, le nom du contact principal, son adresse e-mail et la catégorie du fournisseur
+- je crée une nouvelle demande de référencement fournisseur
+- le système ne considère pas comme soumise à validation toute demande de référencement fournisseur enregistrée en brouillon
+- je complète ultérieurement une demande de référencement fournisseur en brouillon
+- le statut de "demande de référencement fournisseur" est "en brouillon"
+- je tente de soumettre une demande de référencement fournisseur pour validation
+- je saisis {valeur} dans le champ {champ}
+- je sélectionne {valeur} dans la liste {liste}

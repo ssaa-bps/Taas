@@ -1,0 +1,18 @@
+{
+  "exigences": [
+    {
+      "exigenceCode": "SPEC-SUP-001",
+      "libelle": "En tant qu'utilisateur habilité, je peux créer une nouvelle demande de référencement fournisseur en saisissant la raison sociale, le pays, l'adresse, l'identifiant fiscal, le nom du contact principal, son adresse e-mail et la catégorie du fournisseur.",
+      "specCode": "SPEC-SPEC-FR-4",
+      "statusCode": "generee",
+      "moduleCode": "sup"
+    },
+    {
+      "exigenceCode": "SPEC-SUP-002",
+      "libelle": "En tant qu'utilisateur habilité, je peux enregistrer une demande de référencement fournisseur en brouillon pour la compléter ultérieurement sans soumettre la demande à validation.",
+      "specCode": "SPEC-SPEC-FR-4",
+      "statusCode": "generee",
+      "moduleCode": "sup"
+    }
+  ]
+}

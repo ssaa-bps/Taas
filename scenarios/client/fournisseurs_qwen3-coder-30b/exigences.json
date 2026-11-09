@@ -1,0 +1,124 @@
+{
+  "exigences": [
+    {
+      "exigenceCode": "SPEC-FRN-001",
+      "libelle": "En tant qu'utilisateur habilité, je peux créer une demande de référencement fournisseur contenant la raison sociale, le pays, l'adresse, l'identifiant fiscal, le nom du contact principal, son adresse e-mail et la catégorie du fournisseur",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "frn",
+      "ivaluaModuleCode": "sup",
+      "ivaluaTechnicalModule": "Suppliers",
+      "ivaluaLabel": "Supplier Info Management"
+    },
+    {
+      "exigenceCode": "SPEC-FRN-002",
+      "libelle": "En tant qu'utilisateur habilité, je peux enregistrer une demande de référencement en brouillon",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "frn",
+      "ivaluaModuleCode": "sup",
+      "ivaluaTechnicalModule": "Suppliers",
+      "ivaluaLabel": "Supplier Info Management"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-001",
+      "libelle": "En tant qu'utilisateur, je peux importer une facture fournisseur contenant l'identifiant fournisseur, le numéro de facture, la date de facture et le montant total",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac",
+      "ivaluaModuleCode": "inv",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Invoices"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-002",
+      "libelle": "En tant qu'utilisateur, je peux consulter les détails d'une facture importée",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac",
+      "ivaluaModuleCode": null,
+      "ivaluaTechnicalModule": null,
+      "ivaluaLabel": null
+    },
+    {
+      "exigenceCode": "SPEC-ACH-001",
+      "libelle": "En tant qu'employé habilité, je peux créer une demande d'achat contenant une description, une quantité, un prix unitaire, un fournisseur et une date de livraison",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach",
+      "ivaluaModuleCode": "req",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Purchase Requisitions"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-002",
+      "libelle": "En tant qu'employé habilité, je peux enregistrer une demande d'achat en brouillon",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach",
+      "ivaluaModuleCode": "req",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Purchase Requisitions"
+    },
+    {
+      "exigenceCode": "SPEC-ACH-003",
+      "libelle": "En tant qu'approbateur habilité, je peux approuver ou rejeter une demande d'achat",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "ach",
+      "ivaluaModuleCode": "req",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Purchase Requisitions"
+    },
+    {
+      "exigenceCode": "SPEC-CMD-001",
+      "libelle": "En tant qu'approbateur habilité, je peux générer une commande d'achat à partir d'une demande approuvée",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "cmd",
+      "ivaluaModuleCode": "ord",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Purchase Orders"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-003",
+      "libelle": "En tant qu'utilisateur, je peux importer une facture fournisseur dont les champs obligatoires sont renseignés et le montant total est valide",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac",
+      "ivaluaModuleCode": "inv",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Invoices"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-004",
+      "libelle": "Le système doit rejeter les factures dont les champs obligatoires sont manquants ou dont le montant total est invalide",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac",
+      "ivaluaModuleCode": "inv",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Invoices"
+    },
+    {
+      "exigenceCode": "SPEC-FAC-005",
+      "libelle": "Le système doit vérifier si une facture portant le même identifiant fournisseur et le même numéro de facture existe déjà avant l'importation",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "fac",
+      "ivaluaModuleCode": "inv",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Invoices"
+    },
+    {
+      "exigenceCode": "SPEC-CMD-002",
+      "libelle": "Le système doit empêcher la génération de plusieurs commandes à partir d'une même demande d'achat",
+      "specCode": "SPEC-FRN-001",
+      "statusCode": "generee",
+      "moduleCode": "cmd",
+      "ivaluaModuleCode": "ord",
+      "ivaluaTechnicalModule": "E-procurement",
+      "ivaluaLabel": "Purchase Orders"
+    }
+  ]
+}

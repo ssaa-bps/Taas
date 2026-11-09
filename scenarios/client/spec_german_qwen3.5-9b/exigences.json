@@ -1,0 +1,24 @@
+{
+  "exigences": [
+    {
+      "exigenceCode": "SPEC-FRN-001",
+      "libelle": "En tant que utilisateur habilité, je peux créer une demande de référencement fournisseur contenant le nom de l'entreprise, le pays, l'adresse, le numéro d'identification fiscale, le nom du contact principal, son adresse e-mail et la catégorie du fournisseur.",
+      "specCode": "SPEC-SPEC-GERMAN",
+      "statusCode": "generee",
+      "moduleCode": "frn",
+      "ivaluaModuleCode": "sup",
+      "ivaluaTechnicalModule": "Suppliers",
+      "ivaluaLabel": "Supplier Info Management"
+    },
+    {
+      "exigenceCode": "SPEC-FRN-002",
+      "libelle": "En tant que utilisateur habilité, je peux enregistrer une demande de référencement fournisseur en brouillon pour la compléter ultérieurement.",
+      "specCode": "SPEC-SPEC-GERMAN",
+      "statusCode": "generee",
+      "moduleCode": "frn",
+      "ivaluaModuleCode": "sup",
+      "ivaluaTechnicalModule": "Suppliers",
+      "ivaluaLabel": "Supplier Info Management"
+    }
+  ]
+}

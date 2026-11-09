@@ -1,0 +1,20 @@
+code: SPEC-AUT-001
+titre: Connexion utilisateur
+contenu: |
+  Feature: User login
+
+  A registered user can sign in to the web application with an email address and a password.
+
+  Business rules
+  - The email field is mandatory and must be a valid email address (max 254 characters).
+  - The password field is mandatory. A valid password has between 8 and 64 characters.
+  - On success, the user is redirected to the dashboard page and the welcome message "Welcome back, <first name>" is displayed.
+  - If the email or the password is wrong, the message "Invalid email or password" is displayed.
+    The message must not reveal which of the two fields is wrong.
+  - After 5 consecutive failed attempts, the account is locked for 15 minutes.
+    While locked, the message "Account temporarily locked. Try again in 15 minutes" is displayed, even if the credentials are correct.
+  - A successful login resets the failed attempts counter.
+  - A "Remember me" checkbox keeps the user signed in for 30 days on this browser. It is unchecked by default.
+  - A "Forgot password?" link redirects to the password reset page.
+  - A deactivated account cannot sign in and the message "Your account has been deactivated" is displayed.
+

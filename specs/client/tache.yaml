@@ -1,0 +1,11 @@
+code: SPEC-TCH-001
+titre: Gestion de tâches (to-do list)
+contenu: |
+  Feature: Gestion de tâches (to-do list)
+  
+  1. En tant qu'utilisateur, je veux pouvoir créer une nouvelle tâche avec un titre et une description, afin de pouvoir organiser mes activités.
+  2. En tant qu'utilisateur, je veux pouvoir attribuer une priorité à chaque tâche, pour pouvoir identifier celles qui sont les plus importantes.
+  3. En tant qu'utilisateur, je veux pouvoir marquer une tâche comme terminée, pour suivre mes progrès.
+  4. En tant qu'utilisateur, je veux pouvoir ajouter des étiquettes à chaque tâche, pour mieux les classifier et les organiser.
+  5. En tant qu'utilisateur, je veux pouvoir filtrer mes tâches par statut (terminé/non terminé) et par priorité, pour accéder rapidement à celles qui sont importantes.
+  6. En tant qu'utilisateur, je veux pouvoir modifier ou supprimer une tâche existante, au besoin.

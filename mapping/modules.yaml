@@ -1,0 +1,226 @@
+modules:
+- Functional Module: api
+  Technical module: API
+  Label (EN): API
+- Functional Module: apqp
+  Technical module: Quality Processes
+  Label (EN): APQP
+- Functional Module: auc
+  Technical module: Auctions
+  Label (EN): Auctions
+- Functional Module: bas
+  Technical module: Platform technical module
+  Label (EN): Base
+- Functional Module: bom
+  Technical module: Products and items
+  Label (EN): BOM
+- Functional Module: bp_taas
+  Technical module: null
+  Label (EN): Buyr Partners TAAS
+- Functional Module: bpm
+  Technical module: Sourcing Project Management
+  Label (EN): Sourcing Projects
+- Functional Module: bud
+  Technical module: E-procurement
+  Label (EN): Budget
+- Functional Module: buy
+  Technical module: Buyer technical module
+  Label (EN): Buyer
+- Functional Module: cam
+  Technical module: Category Management
+  Label (EN): Category Management
+- Functional Module: card
+  Technical module: Payment
+  Label (EN): V-Card / P-Card
+- Functional Module: cdc
+  Technical module: Contract
+  Label (EN): Contract Data Capture
+- Functional Module: cdt
+  Technical module: Continuous delivery tool
+  Label (EN): Continuous delivery tool
+- Functional Module: clb
+  Technical module: Contingent Labor Management
+  Label (EN): Contingent Labor Management
+- Functional Module: cln
+  Technical module: null
+  Label (EN): Cleansing
+- Functional Module: col
+  Technical module: Collaborative work
+  Label (EN): Collaborative
+- Functional Module: com
+  Technical module: Communication
+  Label (EN): Communication
+- Functional Module: core
+  Technical module: null
+  Label (EN): Core
+- Functional Module: cpay
+  Technical module: Payment
+  Label (EN): Core-Payment
+- Functional Module: ctl
+  Technical module: null
+  Label (EN): control
+- Functional Module: ctn
+  Technical module: Contents management
+  Label (EN): Contents
+- Functional Module: ctr
+  Technical module: Contract
+  Label (EN): Contracts
+- Functional Module: dap
+  Technical module: Guides (DAP)
+  Label (EN): Guides (DAP)
+- Functional Module: des
+  Technical module: null
+  Label (EN): Design mode
+- Functional Module: dis
+  Technical module: Disputes
+  Label (EN): Issues Management
+- Functional Module: eai
+  Technical module: E.A.I.
+  Label (EN): EAI
+- Functional Module: eim
+  Technical module: Environmental Impact Management
+  Label (EN): Environmental Impact Management
+- Functional Module: ema
+  Technical module: Emails
+  Label (EN): Email
+- Functional Module: etl
+  Technical module: ETL
+  Label (EN): ETL
+- Functional Module: exp
+  Technical module: Expenses
+  Label (EN): Expenses
+- Functional Module: fct
+  Technical module: Forecast
+  Label (EN): Forecast
+- Functional Module: fil
+  Technical module: Files management
+  Label (EN): Files
+- Functional Module: frm
+  Technical module: Forum
+  Label (EN): Forum
+- Functional Module: gen
+  Technical module: null
+  Label (EN): General
+- Functional Module: hlp
+  Technical module: Help Center
+  Label (EN): Help Center
+- Functional Module: imp
+  Technical module: ETL
+  Label (EN): Imports
+- Functional Module: ind
+  Technical module: Business intelligence
+  Label (EN): Indicators
+- Functional Module: inv
+  Technical module: E-procurement
+  Label (EN): Invoices
+- Functional Module: ipm
+  Technical module: Inventory Planning & Management
+  Label (EN): Inventory Collaboration
+- Functional Module: iva
+  Technical module: Iva
+  Label (EN): IVA
+- Functional Module: job
+  Technical module: Jobs
+  Label (EN): Job
+- Functional Module: ntk
+  Technical module: Intake & Orchestration Management
+  Label (EN): Intake & Orchestration Management
+- Functional Module: opt
+  Technical module: Optimization
+  Label (EN): Optimization
+- Functional Module: ord
+  Technical module: E-procurement
+  Label (EN): Purchase Orders
+- Functional Module: org
+  Technical module: Organization management
+  Label (EN): Organisation
+- Functional Module: pay
+  Technical module: Payment
+  Label (EN): Payment
+- Functional Module: pbi
+  Technical module: Business intelligence
+  Label (EN): Platform BI
+- Functional Module: pdt
+  Technical module: Products and items
+  Label (EN): Pricelist & Catalogs
+- Functional Module: per
+  Technical module: Platform technical module
+  Label (EN): Periods
+- Functional Module: prg
+  Technical module: Collaboration Plans
+  Label (EN): Collaboration Plans
+- Functional Module: prj
+  Technical module: Programs
+  Label (EN): Program Management
+- Functional Module: psp
+  Technical module: Services procurement
+  Label (EN): Professional Services Procurement
+- Functional Module: pub
+  Technical module: Public notices for S2C
+  Label (EN): Public notices for S2C
+- Functional Module: pun
+  Technical module: External catalogs interface
+  Label (EN): External catalogs interface
+- Functional Module: qal
+  Technical module: Quality Processes
+  Label (EN): Quality Processes
+- Functional Module: qst
+  Technical module: Questionnaire
+  Label (EN): Questionnaire
+- Functional Module: que
+  Technical module: Queries
+  Label (EN): Queries
+- Functional Module: rec
+  Technical module: E-procurement
+  Label (EN): Receiving
+- Functional Module: req
+  Technical module: E-procurement
+  Label (EN): Purchase Requisitions
+- Functional Module: rfi
+  Technical module: RFI
+  Label (EN): RFI
+- Functional Module: rfp
+  Technical module: RFx
+  Label (EN): RFx
+- Functional Module: rsk
+  Technical module: Suppliers risks management
+  Label (EN): Risks
+- Functional Module: sav
+  Technical module: Action plans / savings management
+  Label (EN): Savings Tracking
+- Functional Module: scan
+  Technical module: Contents management
+  Label (EN): SCAN
+- Functional Module: scr
+  Technical module: Scorecard
+  Label (EN): Scorecard
+- Functional Module: snp
+  Technical module: Snapshot
+  Label (EN): Snapshot
+- Functional Module: spd
+  Technical module: Spend management
+  Label (EN): Spend Analysis
+- Functional Module: spe
+  Technical module: Suppliers' performance management
+  Label (EN): Performance Management
+- Functional Module: sup
+  Technical module: Suppliers
+  Label (EN): Supplier Info Management
+- Functional Module: tag
+  Technical module: Tagging
+  Label (EN): Tagging
+- Functional Module: tlg
+  Technical module: Tooling
+  Label (EN): Assets & Tooling
+- Functional Module: usr
+  Technical module: Users
+  Label (EN): Users
+- Functional Module: vmi
+  Technical module: Inventory Planning & Management
+  Label (EN): Vendor Managed Inventory
+- Functional Module: vmm
+  Technical module: null
+  Label (EN): Advanced SIM (ASIM)
+- Functional Module: wfl
+  Technical module: Workflows
+  Label (EN): Workflow
