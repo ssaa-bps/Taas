@@ -1,0 +1,78 @@
+# ============================================================
+#  Configuration du framework de génération Gherkin
+#  Les chemins relatifs sont résolus à partir de ce fichier.
+#
+#  Pipeline par spécification :
+#    1. exigence_prompt.txt   -> découpe la spécification en exigences (JSON)
+#    2. dictionary_prompt.txt -> ajoute au dictionnaire les steps manquants
+#    3. gherkin_prompt.txt    -> un fichier .feature par exigence, avec ses tags
+# ============================================================
+
+llm:
+  # Modèle Ollama à utiliser (voir `ollama list`).
+  # Exemples : "qwen3:14b", "ministral-3:8b", "qwen3-coder:30b", "devstral-small-2:24b"
+  # Pour changer de modèle : modifier cette ligne, ou lancer
+  #   python main.py --model ministral-3:8b
+  model: "qwen3:14b"
+
+  # Adresse du serveur Ollama
+  host: "http://127.0.0.1:11434"
+
+  # 0.0 = très déterministe, 1.0 = créatif. 0.2 convient bien aux cas de test.
+  temperature: 0.2
+
+  # Taille de la fenêtre de contexte (entrée + sortie). Plus c'est grand, plus il faut de mémoire.
+  # 8192 suffit depuis que le dictionnaire envoyé au LLM est filtré (≈ 3 000 tokens de prompt).
+  num_ctx: 8192
+
+  # Nombre maximum de tokens générés (null = pas de limite). Sert de repli pour une étape sans plafond propre.
+  num_predict: 2048
+
+  # Plafond de tokens générés PAR ÉTAPE. Sur CPU la génération coûte ~3 tokens/s : ces plafonds
+  # empêchent un modèle qui « divague » de bloquer l'exécution pendant 15-25 minutes.
+  num_predict_exigences: 1200
+  num_predict_dictionary: 800
+  num_predict_gherkin: 1500
+
+  # Mode "réflexion" des modèles qui le supportent (Qwen3, etc.).
+  #   false = désactivé (beaucoup plus rapide, recommandé ici)
+  #   true  = activé
+  #   null  = ne rien envoyer (comportement par défaut du modèle)
+  think: false
+
+  # Durée pendant laquelle Ollama garde le modèle en mémoire après la dernière requête.
+  keep_alive: "30m"
+
+  # Délai maximum d'attente d'une réponse, en secondes.
+  timeout: 1800
+
+generation:
+  # Langue des mots-clés Gherkin : "en" (Feature/Scenario/Given/When/Then),
+  # "fr" (Fonctionnalité/Scénario/Étant donné/Quand/Alors), etc.
+  # Le texte des steps suit la langue de l'exigence et du dictionnaire (français ici).
+  gherkin_language: "en"
+
+  # Nombre maximum de nouvelles phrases ajoutées au dictionnaire par spécification
+  # (remplace __MAX_STEPS__ dans dictionary_prompt.txt).
+  max_steps: 20
+
+  # Nombre maximum d'exigences retenues par spécification (1 exigence = 1 appel Gherkin).
+  max_exigences: 12
+
+  # Nombre maximum de scénarios par exigence (remplace __MAX_SCENARIOS__ dans gherkin_prompt.txt).
+  max_scenarios: 4
+
+  # Nombre maximum de phrases du dictionnaire envoyées au LLM (les plus proches de la spécification).
+  # Le fichier steps.yaml n'est jamais réduit : seul le prompt l'est. 0 interdit ; mettre 9999 pour tout envoyer.
+  max_dictionary_steps: 60
+
+paths:
+  exigence_prompt_file: packages/scenario-generator/exigence_prompt.txt     # étape 1 : spécification -> exigences
+  dictionary_prompt_file: packages/scenario-generator/dictionary_prompt.txt # étape 2 : exigences -> steps manquants
+  gherkin_prompt_file: packages/scenario-generator/gherkin_prompt.txt       # étape 3 : exigence -> scénario Gherkin
+  steps_file: dictionary/steps.yaml                     # dictionnaire de steps (complété automatiquement)
+  modules_file: mapping/modules.yaml                   # catalogue unique des modules fonctionnels
+  specs_dir: specs                                      # spécifications .yaml/.yml/.docx/.pdf/.xlsx
+  output_dir: scenarios/client                         # un dossier par spécification et par modèle
+  log_file: logs/execution.log                          # journal d'exécution
+  results_file: scenarios/client/executions.xlsx        # tableau Excel, une ligne par appel au LLM
